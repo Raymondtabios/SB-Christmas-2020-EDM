@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">	
+<title>Email</title>
+<style type="text/css">
+/*global reset*/
+.ReadMsgBody {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.ExternalClass * {
+    line-height: 100%
+}
+body {
+    width: 100% !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+	background-color: #FFFFFF;
+}
+:root {
+    color-scheme: light dark;
+    supported-color-schemes: light dark;
+}
+.darkmodebgcolor {
+   background-color: #ffffff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+body {
+	background-color: #111 !important;
+}	
+.darkmodebgcolor {
+    background-color: #ffffff !important;
+}
+}
+table {
+    border-spacing: 0;
+}
+table td {
+    border-collapse: collapse;
+}
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* Client-specific Styles */
+.first-image img, .first-image {
+    width: 163px;
+}
+.second-image img, .second-image {
+    width: 172px;
+}
+.third-image img, .third-image {
+    width: 173px;
+}
+.fourth-image img, .fourth-image {
+    width: 92px;
+}
+#outlook a {
+    padding: 0;
+} /* Force Outlook to provide a "view in browser" menu link. */
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {
+    width: 100%;
+} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+} /* Force Hotmail to display normal line spacing.*/
+#backgroundTable {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    line-height: 100% !important;
+}
+img {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+a img {
+    border: none;
+}
+.image_fix {
+    display: block;
+}
+p {
+    margin: 0px 0px !important;
+}
+table td {
+    border-collapse: collapse;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+a {
+    color: #0a8cce;
+    text-decoration: none;
+    text-decoration: none!important;
+}
+a[class=imgSocials] {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+}
+/*STYLES*/
+table[class=full] {
+    width: 100%;
+    clear: both;
+}
+img[class=mob-full-img] {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-collapse: collapse !important;
+    border: none !important;
+    display: block !important;
+}
+.block-img-full-all img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-collapse: collapse !important;
+    border: none !important;
+    display: block !important;
+}
+
+/*IPAD STYLES*/
+@media only screen and (max-width: 640px) {
+.first-image img, .first-image {
+    width: 120px !important;
+}
+.second-image img, .second-image {
+    width: 127px !important;
+}
+.third-image img, .third-image {
+    width: 128px !important;
+}
+.fourth-image img, .fourth-image {
+    width: 68px !important;
+}
+.img-dload {
+    width: 200px !important;
+}
+a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #0a8cce; /* or whatever your want */
+    pointer-events: none;
+    cursor: default;
+}
+.download-app img[class=banner2] {
+    width: auto !important;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default;
+}
+table[class=devicewidth] {
+    width: 440px!important;
+    text-align: center!important;
+}
+table[class=devicewidthinner] {
+    width: 420px!important;
+    text-align: center!important;
+}
+table[class=devicewidthinner] td a {
+    text-align: center!important;
+}
+img[class=logo] {
+    width: 440px!important;
+    height: auto!important;
+}
+img[class=banner1] {
+    width: 440px!important;
+    height: 51px!important;
+}
+img[class=banner2] {
+    width: 440px!important;
+    height: auto!important;
+}
+img[class=banner2a] {
+    width: 440px!important;
+    height: 91px!important;
+}
+img[class=colimg2] {
+    width: 440px!important;
+    height: 220px!important;
+}
+img[class=banner-by2s] {
+    width: 220px!important;
+    height: auto !important;
+}
+a[class=imgSocials] {
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+.title-htwo {
+    font-size: 12px !important;
+}
+.title-h{
+  font-size: 13px !important;
+}
+}
+
+/*IPHONE STYLES*/
+@media only screen and (max-width: 480px) {
+a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #0a8cce; /* or whatever your want */
+    pointer-events: none;
+    cursor: default;
+}
+.first-image img, .first-image {
+    width: 87px!important;
+    height: 29px!important;
+}
+.second-image img, .second-image {
+    width: 91px!important;
+    height: 29px!important;
+}
+.third-image img, .third-image {
+    width: 92px!important;
+    height: 29px!important;
+}
+.fourth-image img, .fourth-image {
+    width: 50px!important;
+    height: 29px!important;
+}
+.img-dload {
+    width: 150px !important;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default;
+}
+table[class=devicewidth] {
+    width: 320px!important;
+    text-align: center!important;
+}
+table[class=devicewidthinner] {
+    width: 300px!important;
+    text-align: center!important;
+}
+img[class=logo] {
+    width: auto!important;
+    height: auto!important;
+}
+img[class=banner1] {
+    width: 100%!important;
+    height: auto!important;
+}
+img[class=banner2] {
+    width: 320px !important;
+    height: auto!important;
+}
+img[class=banner2a] {
+    width: 100%!important;
+    height: auto!important;
+}
+img[class=colimg2] {
+    width: 100%!important;
+    height: auto!important;
+}
+td[class=mobile-hide] {
+    display: none!important;
+}
+td[class=padding-bottom25] {
+    padding-bottom: 25px!important;
+}
+a[class=imgSocials] {
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+img[class=banner-by2s] {
+    width: 100%!important;
+    height: auto!important;
+}
+.download-app img[class=banner2] {
+    width: auto !important;
+}
+.title-htwo {
+    font-size: 12px !important;
+}
+.title-h{
+  font-size: 13px !important;
+}
+}
+</style>
+</head>
+<body>
+<!-- Start of PreHeader --> 
+<!-- Start of seperator -->
+<table align="center" width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="seperator">
+  <tbody>
+    <tr>
+      <td><table width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+          <tbody>
+            <tr>
+              <td align="center" height="10" bgcolor="#ffffff" class="darkmodebgcolor">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    <!-- End of seperator -->
+    <tr>
+      <td><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="font-family: Arial; font-size: 14px;color: #909090; padding:0 15px;" st-content="postfooter" bgcolor="#ffffff"  class="darkmodebgcolor"> 
+                (to follow) <br />
+                <br />
+                To be sure to receive our newsletter in the future, please
+                add this email address <a target="_blank" href="starbucks@philippines.cccampaigns.net">starbucks@philippines.cccampaigns.net</a
+                    > to your contacts folder. <br />
+                <br />
+                Can’t see the images? <a href="#" target="_blank">Go here</a> to view the web
+                version. <br />
+                <br /></td>
+            </tr>
+            <!-- Spacing -->
+            <tr>
+              <td width="100%" height="20" bgcolor="#ffffff"  class="darkmodebgcolor"></td>
+            </tr>
+            <!-- Spacing -->
+          </tbody>
+        </table></td>
+    </tr>
+    <!-- End of PreHeader --> 
+    <!--By 2s-->
+    <tr>
+      <td><!-- INSERT TABLE -->
+        
+        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth"
+            >
+          <tr> 
+            <!-- start of image -->
+            <td align="center" st-image="banner-image">
+              <div class="block-img-full-all"> 
+                <img width="600" height="114" alt="Header" border="0" style="display:block; border:none; outline:none; text-decoration:none;" src="images/Header.jpg" class="block-img-full-all"/> 
+             </div>
+            </td>
+        
+          </tr>
+          <!-- end of image -->
+        </table></td>
+    </tr>
+   
+    <!--Body content-->
+    <tr>
+      <td><table width="600" border="0" cellspacing="0" cellpadding="0" class="devicewidth" bgcolor="#1e3932" align="center">
+          <tbody>
+            <tr>
+              <td align="left" valign="top" class="block-img-full-all" bgcolor="#dc372f"><a href="https://www.starbucks.ph/menu-list/beverage-list/featured-beverages" target="_blank">
+                <img alt="CTA1" class="mob-full-img" border="0" height="1247" src="images/Christmas2.gif" style="display:block; border:none" width="600"></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" valign="top" class="block-img-full-all" bgcolor="#dc372f"><a href="https://www.starbucks.ph/menu-list/food-list/featured-food" target="_blank">
+                <img alt="CTA2" class="mob-full-img" border="0" height="1458" src="images/CTA-2.jpg" style="display:block; border:none" width="600"></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" valign="top" class="block-img-full-all" bgcolor="#8fd5ac">
+                <img alt="JollyBaked" class="mob-full-img" border="0" height="513" src="images/Jolly-baked.jpg" style="display:block; border:none" width="600"></a>
+              </td>
+            </tr>
+
+            <td align="center" st-image="banner-image" bgcolor="#ffffff" class="darkmodebgcolor"><table style="font-size:0px;" align="center" cellspacing="0" cellpadding="0" border="0" class="block-img-full-all">
+              <tbody>
+                <tr>
+                  <td style="font-size:0px;" align="center" st-image="banner-image"><a href="https://apps.apple.com/SG/app/id647268330?mt=8" target="_blank"> 
+                    <img alt="" src="images/apple-store.jpg" border="0" style="display:block; border:none; outline:none; text-decoration:none; height: 59; width: 300;" class="img-dload"> </a>
+                  </td>
+                  <td style="font-size:0px;" align="center" st-image="banner-image"><a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en" target="_blank"> 
+                    <img alt="" src="images/google-button.jpg" border="0" style="display:block; border:none; outline:none; text-decoration:none; height: 59; width: 300;" class="img-dload"> </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table></td>
+            
+            <tr>
+              <td align="left" valign="top" class="block-img-full-all" bgcolor="#8fd5ac"><img alt="Starbucks" class="mob-full-img" border="0" height="98" src="images/buttom-design.jpg" style="display:block; border:none" width="600"></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    <tr>
+      
+    <!-- end of image -->
+
+    </tr>
+    <!-- FOOTER -->
+    <tr>
+      <td><table width="600" border="0" cellspacing="0" cellpadding="0" class="devicewidth" align="center">
+          <tbody>
+            <tr>
+              <td align="left" valign="top" bgcolor="#ffffff" class="darkmodebgcolor"><table width="520" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" style="margin: 0 auto">
+                  <tbody>
+                    <tr>
+                      <td><table width="180" align="left" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td align="left" valign="middle"><img src="https://gen-pub-ent-sessionm-com.s3.amazonaws.com/email/images/bbca84e6-09a9-4aec-9750-640660d1aa21/sc.jpg" alt="SB-Logo" style="border:0; display: block"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table width="120" align="right" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td align="left" valign="middle"><a href="https://www.facebook.com/StarbucksPhilippines/?utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_FACEBOOK" target="_blank">
+                                <img src="https://gen-pub-ent-sessionm-com.s3.amazonaws.com/email/images/bbca84e6-09a9-4aec-9750-640660d1aa21/fb.jpg" alt="FB" style="border:0; display:inline">
+                              </a> 
+                              <a href="https://www.instagram.com/starbucksph/?utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_INSTAGRAM" target="_blank">
+                                <img src="https://gen-pub-ent-sessionm-com.s3.amazonaws.com/email/images/bbca84e6-09a9-4aec-9750-640660d1aa21/ig.jpg" alt="IG" style="border:0; display:inline"></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td align="center" height="10" style="border-bottom:1px solid #d8d8d8;font-size:1px; line-height:1px;">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" bgcolor="#ffffff" class="darkmodebgcolor"><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                  <tbody>
+                    <!-- Spacing -->
+                    <tr>
+                      <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <!-- Spacing -->
+                    <tr>
+                      <td><table width="520" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">
+                          <tbody>
+                            <!-- Title -->
+                            <tr >
+                              <td class="title-h" style="font-family:Arial, Helvetica, sans-serif; font-size: 16px; color: #333333;line-height: normal;" st-title="fulltext-title">
+                                <a href="http://www.starbucks.ph/store-locator?utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_STORE" target="_blank" 
+                                style="color:#009942;padding-right: 20px;">Starbucks Stores</a> 
+                                <a href="http://www.starbucks.ph/about-us/our-company/online-policies/terms-of-use?utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_TERMS" target="_blank" 
+                                style="color:#009942;padding-right: 20px;">Starbucks Card Terms of Use</a> 
+                                <a href="http://www.starbucks.ph/about-us/our-company/online-policies/privacy-statement?utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_PRIVACY" target="_blank" 
+                                style="color:#009942;">Privacy Policy</a>
+                              </td>
+                            </tr>
+                            <!-- End of Title --> 
+                            <!-- Spacing -->
+                            <tr>
+                              <td width="100%" height="20"></td>
+                            </tr>
+                            <!-- Footer -->
+                            <tr>
+                              <td class="title-htwo" style="font-family:Arial, Helvetica, sans-serif; font-size: 15px; text-align: left!important; color: #909090; line-height: 1.5;" st-title="fulltext-title">
+                                <span style="padding-bottom: 100px;"> 
+                                If you would like to change the format in which
+                                you recrieve our emails,
+                                <br>
+                                please click <a href="#" target="_blank" style="color:#009942;">here</a>. 
+                                <br>
+                                <br>
+                                Your address is listed as
+                                &lt;jamiesilva0815@yahoo.com&gt;. Please let us know 
+                                <br>
+                                if you wish to <a href="http://www.unsub.com" target="_blank" style="color:#009942;">unsubscribe</a> from this list. <br>
+                                <br>
+                                This email is sent from an account we use for
+                                sending messages only. If you wish to contact us,
+                                don't reply to this email - we won't receive your
+                                response. Please use this <a href="https://starbuckscard.ph/sbcard/index.php?%2Ffaq%2Ffeedback=&utm_source=CRM&utm_medium=EMAIL&utm_campaign=SBUX_2018VALENTINES_021418&utm_content=STB_CONTACT" target="_blank" 
+                                style="color:#009942;">web form</a> or call our customer care contact center at (02)
+                                8-462-6262 (Metro Manila) or 1800-10-4626262 (PLDT
+                                domestic toll-free). 
+                                <br>
+                                <br>
+                                Copyright © 2015 Starbucks Coffee
+                                Corporation. All rights reserved. </span></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <!-- Spacing -->
+                    <tr>
+                      <td height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                    </tr>
+                    <!-- Spacing -->
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+    
+  </tbody>
+</table>
+</body>
+</html>
